@@ -1,0 +1,17 @@
+.landing{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.card-body{
+    .card-text{
+        font-size: 1.3rem;
+    }
+
+    .card-title{
+        font-size: 1.8rem;
+    }
+}

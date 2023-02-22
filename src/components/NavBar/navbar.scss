@@ -1,0 +1,231 @@
+/* HEADER INCIO */
+
+// NAVBAR START
+
+.who{
+  margin-top: 1rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@mixin config-words {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .fecakes {
+    transition: 500ms all;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  
+    img {
+      transition: 500ms all;
+      max-width: 250px;
+    }
+  }
+  
+  .fa-solid.fa-bars.text-black {
+    font-size: 2rem;
+  }
+  
+  .nav-item {
+    a {
+      font-size: 2rem;
+
+    }
+  }
+  
+  #dropdown-basic{
+    font-size: 2rem;
+
+  }
+
+  @media screen and (min-width: 992px) {
+  
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+      width: 170%;
+      text-align: center;
+      overflow: hidden;
+    }
+  
+    .navbar-nav {
+      position: relative;
+      left: 6vh;
+      gap: 70px;
+      padding-right: 10px;
+      width: 100%;
+  
+      .nav-item {
+        a {
+          color: black;
+        }
+      }
+  
+    }
+  
+    .navbar-nav {
+      gap: 1.5%;
+  
+    }
+  
+    .container-fluid {
+      padding: 0;
+    }
+  
+  
+    .fecakes {
+      img {
+        width: 90%;
+      }
+    }
+  
+    // SUBRAYADO NAVBAR START
+  
+    .navbar-nav {
+      margin: 2rem 1.5rem;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    .navbar-nav {
+  
+      a {
+        @include config-words;
+        font-size: 2rem;
+        position: relative;
+        padding-bottom: 0;
+      }
+    }
+  
+    .navbar-nav {
+  
+      a:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: black;
+        /*animacion de derecha a izquierda*/
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+  
+    }
+  
+    .navbar-nav {
+  
+      a:hover:after {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+  
+    }
+  
+    // SUBYADO NAVBAR FIN
+  
+  }
+  
+  @media screen and (min-width: 1165px) {
+    .navbar-nav {
+      gap: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+  
+    .navbar-nav {
+      gap: 0;
+      margin-top: 0;
+  
+      .nav-item {
+        a {
+          color: black;
+          justify-content: center;
+  
+        }
+      }
+    }
+  
+    .container-fluid {
+      a:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+  
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    /* Navbar START*/
+  
+    .container-navbar-grid {
+      display: grid;
+      background-color: black;
+      align-items: end;
+      padding: 0%;
+      margin: 0%;
+    }
+  
+    .navbar {
+      margin-bottom: 0%;
+      align-items: end;
+      background-color: black;
+      justify-items: center;
+      min-width: 100%;
+      padding-left: 10%;
+  
+      img {
+        width: 50%;
+      }
+  
+      li a {
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  
+    /* Navbar END*/
+  }
+  
+  // MODAL Start
+  
+  .modal-footer{
+  
+    button {
+      font-size: 1.5rem;
+  
+    }
+  }
+  
+  .modal-header{
+    h1{
+      font-size: 1.5rem;
+    }
+  }
+  
+  #total-cart{
+    font-size: 25px;
+  }
+  
+  // Iconos
+
+  #number-cart{
+    font-size: 2rem;
+  }
+
+  .cart-widget{
+    font-size: 2.3rem;
+  }
+
+  // NAVBAR END
+  
+  /* HEADER END */
